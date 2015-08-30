@@ -1,0 +1,3 @@
+import Lclassifier
+
+Lclassifier.refresh()
