@@ -7,6 +7,7 @@ from sklearn.naive_bayes import MultinomialNB
 from nltk import sent_tokenize,word_tokenize,porter
 from sklearn import cross_validation
 import pickle
+
 def getCorpus (root):
     word_lists = PlaintextCorpusReader (root, '.*')
     lang_hash = {}

@@ -6,6 +6,8 @@ from Lclassifier import testClassifier
 import pickle
 import os
 
+classifier_path = 'langSer/manager/classifier.pickle'
+
 @csrf_exempt
 def detect (request):
     if request.method == "POST":
@@ -26,8 +28,7 @@ def detectLang (request):
     
 
 def setUp():
-    print os.getcwd()
-    f = open('langSer/manager/classifier.pickle')
+    f = open(classifier_path)
     classifier = pickle.load(f)
     f.close()
     return classifier
