@@ -38,3 +38,15 @@ When the server starts it loads a pretrained classifier in the memory whose path
 ##Extensions
 
 If you want to add a new language to the classifier copy the language in the  europarl_raw folder in the form 'language/text_files' and run refesh.py to retrain the classifier. 
+
+
+### Python modules used
+The project has some dependency on the following python modules
+
+1. Requests : For sending post requests. 
+2. Django Framework: To run the webserver
+3. pickle : For saving the classifier
+4. json : for sending post request back
+5. nltk: tokenization, and courpus reader
+6. numpy and scipy: for sparse matrix manipulations
+7. sklearn: for learning and feature extraction and testing

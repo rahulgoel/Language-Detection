@@ -1,7 +1,0 @@
-I started with the thought process of building the classifier based on word based features words and bigrams and use a simple linear classifier to separate the text. 
-
-The first challenge was finding multilingual dataset, which was consistent (same length) for all texts. To this end I used europarl NLTK corpus sample which is some subset of parliament proceedings in the European parliament in 11 differnet languages. 
-
-The problem with using word features as I quickly realized that they were simply too many and too sparse and if we see a new word our classifier gets stumped. So instead of tokenizing on word I chose n gram features on sentence level, where I took all 3, 4 and 5 n-grams (tuned). I read that N-gram features on characters work really well on language classification tasks.  
-
-For the choice of classifier I started with a multinomial NB for its ease of training and good probabilistic interpretation. The accuracy which I got on the test set was good. Other classifiers may have also sufficed, but considering the memory and time required for training Naive Bayes was the optimum choice.

@@ -19,9 +19,7 @@ def detect (request):
         )
 
 def detectLang (request):
-    print "here1"
     text = request.POST.get ('text', '')
-    print "here2"
     lang = classifyLang ([text])
     first_val = lang[0]
     return HttpResponse (json.dumps (first_val), content_type="application/json")

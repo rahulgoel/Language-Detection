@@ -1,6 +1,6 @@
 # coding: utf-8
 import requests
-
+# Assumes that the server is running on port 8000
 host_url = 'http://localhost:8000/lang_id/'
 
 # English
