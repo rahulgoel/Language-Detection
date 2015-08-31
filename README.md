@@ -6,6 +6,11 @@ The server is a Django server which can be started by running :
 ```
         python manage.py runserver
 ```
+if there are unapplied migrations we can redo the migrations by running
+
+```
+        python manage.py migrate
+```
 
 from the project root directory. 
 
