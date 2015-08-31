@@ -3,9 +3,9 @@ A simple python server which can detect language based on text
 
 The server is a Django server which can be started by running : 
 
-'''  
+```
         python manage.py runserver
-'''
+```
 
 from the project root directory. 
 
