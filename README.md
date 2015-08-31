@@ -35,7 +35,15 @@ The classifier is currently trained on the European Parliament NLTK sample corpu
 
 When the server starts it loads a pretrained classifier in the memory whose path is mentioned in manager/LanguageManager.py
 
-##Extensions
+## Post Spec
+
+The server accepts post requests on /lang_id/ endpoint
+params (Post) : "text": "The language you want to test"
+
+return ["top_language": probablity of it]
+
+
+###Extensions
 
 If you want to add a new language to the classifier copy the language in the  europarl_raw folder in the form 'language/text_files' and run refesh.py to retrain the classifier. 
 
