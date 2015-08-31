@@ -37,7 +37,8 @@ When the server starts it loads a pretrained classifier in the memory whose path
 
 ## Post Spec
 
-The server accepts post requests on /lang_id/ endpoint
+The server accepts post requests on /lang_id/ endpoint.
+
 params (Post) : "text": "The language you want to test"
 
 return ["top_language": probablity of it]
